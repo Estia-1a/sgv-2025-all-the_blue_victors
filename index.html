@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <title>Accueil - ESTIA Learning</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,7 +9,44 @@
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
     <title>Document</title>
 </head>
-<body>
-    
+<body class="app-body">
+<header class="app-header">
+    <div class="logo-area">
+        <div class="logo-circle">E</div>
+        <div class="logo-text">
+            <span class="logo-title">ESTIA Learning</span>
+            <span class="logo-subtitle">Espace étudiant</span>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <a href="home.html" class="nav-link active">Accueil</a>
+        <a href="courses.html" class="nav-link">Cours</a>
+        <a href="premium.html" class="nav-link">Premium</a>
+    </nav>
+    <div class="user-area">
+        <div class="user-info">
+            <span class="user-name">Alex Martin</span>
+            <span class="user-email">alex.martin@estia.fr</span>
+        </div>
+        <div class="user-avatar">AM</div>
+    </div>
+</header>
+<main class="app-main">
+    <section class="grid-dashboard">
+        <article class="card profile-card">
+            <h2>Profil étudiant</h2>
+            <div class="profile-content">
+                <div class="profile-photo">
+                    <span>Photo</span>
+                </div>
+                <div class="profile-details">
+                    <p><strong>Nom :</strong> Alex Martin</p>
+                    <p><strong>Promotion :</strong> ESTIA 2</p>
+                    <p><strong>Spécialité :</strong> Informatique & Systèmes</p>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
 </body>
 </html>
