@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Accueil - ESTIA Learning</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,123 +8,58 @@
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
     <title>Document</title>
 </head>
-<body class="app-body">
-<header class="app-header">
-    <div class="logo-area">
-        <div class="logo-circle">E</div>
-        <div class="logo-text">
-            <span class="logo-title">ESTIA Learning</span>
-            <span class="logo-subtitle">Espace étudiant</span>
-        </div>
-    </div>
-    <nav class="main-nav">
-        <a href="home.html" class="nav-link active">Accueil</a>
-        <a href="courses.html" class="nav-link">Cours</a>
-        <a href="premium.html" class="nav-link">Premium</a>
-    </nav>
-    <div class="user-area">
-        <div class="user-info">
-            <span class="user-name">Alex Martin</span>
-            <span class="user-email">alex.martin@estia.fr</span>
-        </div>
-        <div class="user-avatar">AM</div>
-    </div>
-</header>
-<main class="app-main">
-    <section class="grid-dashboard">
-        <article class="card profile-card">
-            <h2>Profil étudiant</h2>
-            <div class="profile-content">
-                <div class="profile-photo">
-                    <span>Photo</span>
-                </div>
-                <div class="profile-details">
-                    <p><strong>Nom :</strong> Alex Martin</p>
-                    <p><strong>Promotion :</strong> ESTIA 2</p>
-                    <p><strong>Spécialité :</strong> Informatique & Systèmes</p>
-                </div>
+<body class="auth-body">
+    <header class="auth-header">
+        <div class="logo-area">
+            <div class="logo-circle"><img src="media/pictures/logo-estia.png"  width="200" height="100"></div>
+            <div class="logo-text">
+                <span class="logo-title">ESTIA Learning</span>
+                <span class="logo-subtitle">Plateforme d'éducation en ligne</span>
             </div>
-        </article>
-        <article class="card">
-            <h2>Derniers cours suivis</h2>
-            <ul class="course-list">
-                <li>
-                    <div>
-                        <strong>Développement Web Statique</strong>
-                        <span class="course-meta">Dernier accès : hier • 75 % complété</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress progress-75"></div>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <strong>Logique Combinatoire</strong>
-                        <span class="course-meta">Dernier accès : 2 jours • 40 % complété</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress progress-40"></div>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <strong>Gestion de Projet</strong>
-                        <span class="course-meta">Dernier accès : 4 jours • 20 % complété</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress progress-20"></div>
-                    </div>
-                </li>
+        </div>
+    </header>
+ 
+    <main class="auth-main">
+        <section class="auth-card">
+            <h1>Connexion</h1>
+            <p class="auth-intro">Connecte-toi avec ton adresse mail ESTIA pour accéder à tes cours.</p>
+            <form class="form">
+                <div class="form-group">
+                    <label for="email">Adresse mail ESTIA</label>
+                    <input type="email" id="email" placeholder="prenom.nom@estia.fr">
+                    <p class="input-hint">L’adresse doit se terminer par <strong>@estia.fr</strong>.</p>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" placeholder="********">
+                </div>
+ 
+                <p class="error-message">
+                    Adresse mail ou mot de passe incorrect. Veuillez réessayer.
+                </p>
+ 
+                <button type="submit" class="btn btn-primary full-width">
+                    Se connecter
+                </button>
+                <div class="auth-links">
+                    <a href="reset_password.html">Mot de passe oublié ?</a>
+                    <section class="auth-side">
+            <h2>Apprendre à l’ESTIA</h2>
+            <p>
+                Accède à tes cours interactifs, suis ta progression et prépare tes projets dans un environnement pensé pour les étudiants de l’ESTIA.
+            </p>
+            <ul class="feature-list">
+                <li>Cours en ligne alignés sur le cursus ESTIA</li>
+                <li>Suivi de progression par module</li>
+                <li>Abonnement premium pour des contenus personnalisés</li>
             </ul>
-        </article>
-        <article class="card timetable-card">
-            <h2>Emploi du temps de demain</h2>
-            <table class="table timetable">
-                <thead>
-                <tr>
-                    <th>Horaire</th>
-                    <th>Cours</th>
-                    <th>Salle</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>08:30 - 10:00</td>
-                    <td>Développement Web</td>
-                    <td>TD33</td>
-                </tr>
-                <tr>
-                    <td>10:15 - 12:00</td>
-                    <td>Algorithme et structures des données</td>
-                    <td>BASANDERE</td>
-                </tr>
-                <tr>
-                    <td>14:00 - 16:00</td>
-                    <td>Complément de mathématiques</td>
-                    <td>TD35</td>
-                </tr>
-                <tr>
-                    <td>16:15 - 18:00</td>
-                    <td>Système de gestions de versions</td>
-                    <td>MARI</td>
-                </tr>
-                </tbody>
-            </table>
-        </article>
-        <article class="card">
-            <h2>Discussions récentes</h2>
-            <ul class="discussion-list">
-                <li>
-                    <strong>Forum – Développement Web</strong>
-                    <p>« Question sur la différence entre les balises html ? »</p>
-                </li>
-                <li>
-                    <strong>Discussion de groupe – Projet ESTIA</strong>
-                    <p>« Partage des maquettes pour le cours de demain »</p>
-                </li>
-            </ul>
-        </article>
-    </section>
-</main>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© 2025 ESTIA Learning – Plateforme pédagogique fictive pour projet étudiant.</p>
+    </footer>
+                
+                  
 </body>
 </html>
